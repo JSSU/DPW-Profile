@@ -30,38 +30,24 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul id="nav_id" class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Main</a></li>
+            <li><a href="#about">Director</a></li>
+            <li><a href="#contact">Summary-Sheet</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-
-      <div class="row">
-        <div class="col-md-4">1.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
     <div class="container">
-
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
-      <div class="row">
-        <div class="col-md-4">2.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
-
     </div><!-- /.container -->
 
     <div id="about" class="starter-template">
       <h1>About</h1>
       <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
     </div>
       <div class="row">
         <div class="col-md-4">3.col-md-4</div>
