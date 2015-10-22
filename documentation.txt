@@ -1,0 +1,14 @@
+/**
+ * Main[Name, Title, Tel, Email, Address, Department, Agency]
+ * Director[Director_Name, Director_Title]
+ * Summary_Sheet[To_Summary_Sheet, From_Summary_Sheet, From_Main.Name(ReadOnly)]
+ * Enclosure[Contractor_ini, Consultant_ini, Congratulatory.ini]
+ */
+
+/**
+ * SQL: balt-sql-fc
+ *		Table:New_DPW_Executive()
+ *			  New_DPW_Initial()
+ *			  New_DPW_Manager()
+ *			  
+ */

@@ -12,7 +12,7 @@
     <link rel="icon" href="icons/form.ico">
     <style>
         #draggable { width: 150px; height: 150px; padding: 0.5em; border: 1px solid #ccc; display: table; }  
-        #centerdiv {text-align:center; vertical-align: middle; display: table-cell;}  
+        #centerdiv { text-align:center; vertical-align: middle; display: table-cell;}  
     </style>
 </head>
  <body>
@@ -30,7 +30,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul id="nav_id" class="nav navbar-nav">
-            <li class="active"><a href="#">Main</a></li>
+            <li class="active"><a href="#Main">Main</a></li>
             <li><a href="#about">Director</a></li>
             <li><a href="#contact">Summary-Sheet</a></li>
           </ul>
@@ -39,29 +39,32 @@
     </nav>
 
     <div class="container">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div class="starter">
+        <h1>DPW Profile</h1>
+        <p class="lead"><br></p>
       </div>
     </div><!-- /.container -->
 
-    <div id="about" class="starter-template">
-      <h1>About</h1>
-      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    </div>
-      <div class="row">
-        <div class="col-md-4">3.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
-    <div id="contact" class="starter-template">
-      <div class="row">
-        <div class="col-md-4">4.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
+<!-- BodyParts -->
+  <div>
+    <div id="Main" class="starter" style="visibility:hidden">
+      <h1>Main</h1>
     </div>
 
+    <!-- Director -->
+    <div id="Director" class="starter" style="visibility:hidden">
+      <h1>Director</h1>
+    </div>
+
+    <!-- Summary-Sheet -->
+    <div id="Summary-Sheet" class="starter" style="visibility:hidden">
+      <h1>Summary-Sheet</h1>
+    </div>
+  </div>  
+<!-- DataSource -->
+     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource3" runat="server"></asp:SqlDataSource>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -69,6 +72,9 @@
       $(".nav a").on("click", function () {
           $(".nav").find(".active").removeClass("active");
           $(this).parent().addClass("active");
+          alert($(this).html());
+          $("div .starter").css('visibility', 'hidden');
+          $("div #" + $(this).html()).css('visibility', 'visible');
       });
   </script>
 <script type="text/javascript">    (function () { return window.SIG_EXT = {}; })()</script>
